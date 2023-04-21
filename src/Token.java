@@ -22,6 +22,8 @@ public class Token {
     public final TokenType type; // token type
     public final String lexeme; // token value
 
+    public static final String TOKEN_DELIMITER = "\t\n\r\f ";
+
     public Token (TokenType type, String value) {
         this.type = type;
         this.lexeme = value;
