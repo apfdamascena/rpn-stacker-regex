@@ -7,7 +7,6 @@ public class Scanner {
 
     private final Regex regex = new Regex();
 
-
     public List<Token> read(String input){
         StringTokenizer tokenizer = new StringTokenizer(input, Token.TOKEN_DELIMITER);
 
