@@ -17,9 +17,8 @@ public class Scanner {
         return tokens;
     }
 
-    public Token create(String token){
+    private Token create(String token){
         return regex.generateToken(token);
     }
-
 
 }
