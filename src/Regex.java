@@ -15,7 +15,7 @@ public class Regex {
         } else {
             throw new LexerError("Unexpected character: " + token);
         }
-        
+
         return generatedToken;
     }
 
