@@ -3,9 +3,10 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 public class Scanner {
-
     private final String source;
     private final List<Token> tokens = new ArrayList<>();
+
+    private final Regex regex = new Regex();
 
     public Scanner(String source){
         this.source = source;
@@ -23,7 +24,7 @@ public class Scanner {
     }
 
     public Token create(String token){
-        return null;
+        return regex.generateToken(token);
     }
 
 
